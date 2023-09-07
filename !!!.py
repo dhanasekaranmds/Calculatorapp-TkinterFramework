@@ -1,0 +1,53 @@
+from tkinter import *
+top=Tk()
+top.title("dhanasekaran")
+top.geometry('500x400')
+top.config(bg='#FF0000')
+top.resizable(False,False)
+def data():
+    a=int(e1.get())
+    b=int(e2.get())
+    c=a+b
+    print(c)
+    l3=Label(top,text=str(c))
+    l3.place(x=170,y=180)
+def surya():
+    a=int(e1.get())
+    b=int(e2.get())
+    c=a-b
+    print(c)
+    l4=Label(top,text=str(c))
+    l4.place(x=210,y=180)
+def karthi():
+    a=int(e1.get())
+    b=int(e2.get())
+    c=a*b
+    print(c)
+    l4=Label(top,text=str(c))
+    l4.place(x=250,y=180)
+def manoj():
+    a=int(e1.get())
+    b=int(e2.get())
+    c=a/b
+    print(c)
+    l4=Label(top,text=str(c))
+    l4.place(x=290,y=180)
+l=Label(top,text="CALCULATOR")
+l.place(x=150,y=50)
+l1=Label(top,text="first no")
+l1.place(x=100,y=80)
+e1=Entry(top)
+e1.place(x=170,y=80)
+l2=Label(top,text="second no")
+l2.place(x=100,y=110)
+e2=Entry(top)
+e2.place(x=170,y=110)
+b1=Button(top,text="Add",command=data)
+b1.place(x=170,y=150)
+b2=Button(top,text="sub",command=surya)
+b2.place(x=210,y=150)
+b3=Button(top,text="mul",command=karthi)
+b3.place(x=250,y=150)
+b4=Button(top,text="Div",command=manoj)
+b4.place(x=290,y=150)
+top.mainloop()
